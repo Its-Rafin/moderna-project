@@ -51,6 +51,11 @@ h6 {
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #555555; /* Used for navigation links of the dropdown items in the navigation menu. */
   --nav-dropdown-hover-color: #68a4c4; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  /* Fetured icon color */
+  --cyan-color: #0dcaf0;
+  --orange-color: #fd7e14;
+  --teal-color: #20c997;
+  --red-color: #df1529;
 }
 
  .hero-container{
@@ -173,3 +178,113 @@ h6 {
     .button:hover{
       background-color: var(--accent-color);
     }
+
+    /* Feature section CSS*/
+    .featured-section{
+      margin-top: 70px;
+    }
+    .featured-card{
+      position: relative;
+      background-color: var(--surface-color);
+      box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
+      height: 100%;
+      padding: 40px 30px;
+      text-align: center;
+      transition: 0.3s;
+      border-radius: 5px;
+      border: 1px solid transparent;
+  }
+    .featured-card .icon {
+      margin: 0 auto;
+      width: 64px;
+      height: 64px;
+      display: flex;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      transition: ease-in-out 0.3s;
+      position: relative;
+  }
+  .featured-card h3 {
+    font-weight: 700;
+    margin: 10px 0 15px 0;
+    font-size: 22px;
+}
+.featured-card p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+ .card-1 .icon-1{
+    background-color: color-mix(in srgb, var(--cyan-color) 10%, white 95%);
+}
+  .card-2 .icon-1{
+    background-color: color-mix(in srgb, var(--orange-color) 10%, white 95%);
+}
+  .card-3 .icon-1{
+    background-color: color-mix(in srgb, var(--teal-color) 10%, white 95%);
+}
+  .card-4 .icon-1{
+    background-color: color-mix(in srgb, var(--red-color) 10%, white 95%);
+}
+.card-1 .icon-1 i{
+  color: var(--cyan-color);
+    font-size: 28px;
+    transition: 0.5s;
+    position: relative;
+}
+.card-2 .icon-1 i{
+  color: var(--orange-color);
+    font-size: 28px;
+    transition: 0.5s;
+    position: relative;
+}
+.card-3 .icon-1 i{
+  color: var(--teal-color);
+    font-size: 28px;
+    transition: 0.5s;
+    position: relative;
+}
+.card-4 .icon-1 i{
+  color: var(--red-color);
+    font-size: 28px;
+    transition: 0.5s;
+    position: relative;
+}
+
+
+.card-1:hover{
+  box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.1);
+  border-color: var(--cyan-color);
+  transition: ease-in-out 0.3s;
+}
+.card-2:hover{
+  box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.1);
+  border-color: var(--orange-color);
+  transition: ease-in-out 0.3s;
+}
+.card-3:hover{
+  box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.1);
+  border-color: var(--teal-color);
+  transition: ease-in-out 0.3s;
+}
+.card-4:hover{
+  box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.1);
+  border-color: var(--red-color);
+  transition: ease-in-out 0.3s;
+}
+.card-1:hover .icon-1{
+  background-color: var(--cyan-color);
+}
+.card-2:hover .icon-1{
+  background-color: var(--orange-color);
+}
+.card-3:hover .icon-1{
+  background-color: var(--teal-color);
+}
+.card-4:hover .icon-1{
+  background-color: var(--red-color);
+}
+.featured-card:hover i{
+  color: var(--contrast-color);
+}
