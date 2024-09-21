@@ -1,0 +1,175 @@
+*{
+  margin: 0;  
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--default-color);
+  /* background-color: var(--background-color); */
+  font-family: var(--default-font);
+}
+/*--------------------------------------------------------------
+# General Styling & Shared Classes
+--------------------------------------------------------------*/
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+}
+:root {
+    --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Raleway",  sans-serif;
+    --nav-font: "Poppins",  sans-serif;
+}
+/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+:root { 
+  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --default-color: #555555; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #1e4356; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #68a4c4; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+}
+/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+:root {
+  --nav-color: #ffffff;  /* The default color of the main navmenu links */
+  --nav-hover-color: #68a4c4; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #555555; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #68a4c4; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+}
+
+ .hero-container{
+  position: relative;
+  background-image: url(images/img/hero-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+ }
+ .overally{
+  position: absolute;
+  background: #1e4356;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+ }
+
+/* Nav Bar CSS */
+.container{
+  padding-top: 7px;
+}
+.container a{
+  color: var(--nav-color)
+}
+.navbar-brand {
+  font-family: var(--heading-font);
+  font-size: 30px;
+  margin: 0;
+  font-weight: 700;
+  color: var(--heading-color);
+}
+.nav-item a {
+  color: var(--nav-color);
+  padding: 10px 20px;
+  font-family: var(--nav-font);
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10px;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+.nav-item a:hover{
+  color: var(--nav-hover-color);
+}
+.active{
+  color: #68a4c4;
+}
+.nav-link i{
+  color: #ffffff;
+  font-size: 14px;
+  margin-left: 5px;
+}
+/* Swiper CSS */
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+  
+  .hero-section{
+    height: 450px;
+  }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .slider-content h1{
+        color: #ffffff;
+        margin-bottom: 30px;
+        font-size: 40px;
+        font-weight: 700;
+        animation: fadeInDown 1s both;
+        display: block;
+        font-family: var(--heading-font);
+    }
+    .slider-content p{
+      color: #ffffffce;
+    }
+    .button{
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 12px 32px;
+        border-radius: 50px;
+        transition: 0.5s;
+        line-height: 1;
+        margin: 10px;
+        
+        /* animation: fadeInUp 1s both 0.4s; */
+        border: 2px solid var(--accent-color);
+    }
+    .button a{
+      text-decoration: none;
+      color: #ffff;
+    }
+    .button:hover{
+      background-color: var(--accent-color);
+    }
